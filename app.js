@@ -47,4 +47,12 @@ app.get('/loadData', function(req,res){
     res.json(results)
   })
 })
+
+app.post('/registration', function(req, res){
+  console.log(req.body.rsvp)
+  db.collection('events').update({name: req.body.name},{$push: {rsvps: req.body.rsvp}})
+  db.collection('events').findOne({name: req.body.name},function(err, result){
+    console.log(result)
+  })
+})
 app.listen(process.env.PORT || 3000);
