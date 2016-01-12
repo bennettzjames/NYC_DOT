@@ -54,5 +54,53 @@
       "comment": "Shut up Kevin, why you soft as hell"
     }],
     "start": "2016-01-21"
-  }      
+  },
+  {
+    "name": "Sup",
+    "sponsor": "Bike New York",
+    "description": "Supppp",
+    "max_attendees": 20,
+    "rsvps": [],
+    "comments": [{
+      "name": "Yung Squirge",
+      "comment": "Sup"
+    }],
+    "start": "2016-02-11"
+  },
+  {
+    "name": "Biking Shirts 101",
+    "sponsor": "Bike New York",
+    "description": "Cool shirt time",
+    "max_attendees": 2000,
+    "rsvps": [],
+    "comments": [{
+      "name": "Bennito",
+      "comment": "I've got the best shirts ready"
+    }],
+    "start": "2016-02-24"
+  },
+  {
+    "name": "Bike Searching for AC",
+    "sponsor": "Bike New York",
+    "description": "Search harder",
+    "max_attendees": 25,
+    "rsvps": [],
+    "comments": [{
+      "name": "Suhyung Money",
+      "comment": "The SearchForAC continues"
+    }],
+    "start": "2016-03-01"
+  },
+  {
+    "name": "Team Safety Awesome",
+    "sponsor": "Bike New York",
+    "description": "Be safe - use protection",
+    "max_attendees": 100,
+    "rsvps": [],
+    "comments": [{
+      "name": "Abner",
+      "comment": "Abner's a free elf! A free elf!"
+    }],
+    "start": "2016-03-26"
+  }
 ]
