@@ -38,4 +38,8 @@ MongoClient.connect(mongoUrl, function(err, database) {
   process.on('exit', db.close);
 });
 
+app.get('/', function(req, res){
+  res.render('index');
+})
+
 app.listen(process.env.PORT || 3000);
