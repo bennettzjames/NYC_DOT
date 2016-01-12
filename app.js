@@ -7,7 +7,6 @@ var ObjectId = require('mongodb').ObjectId;
 var mongoUrl = 'mongodb://localhost:27017/nycdotDB';
 
 var events = require('./events.json')
-var calendars = require('./calendars.json')
 
 // Configuration
 app.use(bodyParser.urlencoded({extended: true}));
@@ -43,7 +42,7 @@ app.get('/calendar', function(req, res) {
 })
 
 app.get('/loadData', function(req,res){
-  db.collection('calendars').find().toArray(function(err, results){
+  db.collection('events').find().toArray(function(err, results){
     res.json(results)
   })
 })
