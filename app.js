@@ -5,6 +5,7 @@ var methodOverride = require('method-override');
 var MongoClient = require('mongodb').MongoClient;
 var ObjectId = require('mongodb').ObjectId;
 var mongoUrl = 'mongodb://localhost:27017/nycdotDB';
+
 var events = require('./events.json')
 var calendars = require('./calendars.json')
 
@@ -40,6 +41,10 @@ MongoClient.connect(mongoUrl, function(err, database) {
 
 app.get('/', function(req, res){
   res.render('index');
+
+app.get('/calendar', function(req, res) {
+	res.render('calendar_index')
+
 })
 
 app.listen(process.env.PORT || 3000);
