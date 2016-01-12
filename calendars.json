@@ -3,9 +3,24 @@
     "month": "January",
     "events": [
       {
-        "_id": "56952f75ec31ea234a22a176",
+        "_id": "569553f2032767ef4bfdbb8e",
         "date": "2016-01-15",
         "name": "Learn to Ride"
+      },
+      {
+        "_id": "569553f2032767ef4bfdbb8f",
+        "date": "2016-01-18",
+        "name": "Learn to Wear a Helmet"
+      },
+      {
+        "_id": "569553f2032767ef4bfdbb90",
+        "date": "2016-01-21",
+        "name": "Learn to Fix your Bike"
+      },
+      {
+        "_id": "569553f2032767ef4bfdbb91",
+        "date": "2016-01-27",
+        "name": "Ride Along"
       }
     ]
   }
