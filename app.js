@@ -43,9 +43,8 @@ app.get('/', function(req, res){
   res.render('index');
 })
 
-app.get('/calendar', function(req, res) {
-	res.render('calendar_index')
 
-})
+
+
 
 app.listen(process.env.PORT || 3000);
