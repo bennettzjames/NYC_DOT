@@ -8,13 +8,9 @@ $(document).ready(function(){
       type: 'get',
       dataType: 'json'
     }).done(function(results){
-      console.log('ajax works')
       var eventsArray = []
       results.forEach(function(result){
-        console.log(result.events)
-        result.events.forEach(function(evnt){
-          eventsArray.push({title: evnt.name, start: evnt.date})
-        })
+        eventsArray.push({title: result.name, start: result.start})
       })
       $('#calendar').fullCalendar({
         height: 500,
