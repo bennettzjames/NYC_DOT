@@ -24,15 +24,10 @@ MongoClient.connect(mongoUrl, function(err, database) {
   console.log("Connected correctly to server");
   db = database;
 
-  // Search the events & calendars collections and return all results. If the collections are empty, seed with events.json and calendars.json
+  // Search the events & calendars collections and return all results. If the collections are empty, seed with events.json
   db.collection('events').find({}).toArray(function(err,result){
     if (result.length===0){
       db.collection('events').insert(events)
-    }
-  }) 
-  db.collection('calendars').find({}).toArray(function(err,result){
-    if (result.length===0){
-      db.collection('calendars').insert(calendars)
     }
   }) 
 
@@ -45,7 +40,12 @@ app.get('/', function(req, res){
 
 app.get('/calendar', function(req, res) {
 	res.render('calendar_index')
+})
 
+app.get('/loadData', function(req,res){
+  db.collection('calendars').find().toArray(function(err, results){
+    res.json(results)
+  })
 })
 
 app.listen(process.env.PORT || 3000);

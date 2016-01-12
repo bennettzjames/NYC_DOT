@@ -8,7 +8,8 @@
     "comments": [{
       "name": "Anna",
       "comment": "Sounds like a great time!"
-    }]
+    }],
+    "start": "2016-01-15"
   },
   {
     "name": "Learn to Wear a Helmet",
@@ -19,7 +20,8 @@
     "comments": [{
       "name": "Phil",
       "comment": "Sounds magical!"
-    }]
+    }],
+    "start": "2016-01-17"
   },
   {
     "name": "Learn to Fix your Bike",
@@ -34,7 +36,8 @@
     {
       "name": "Anna",
       "comment": "Kewl!"
-    }]
+    }],
+    "start": "2016-01-19"
   },
   {
     "name": "Ride Along",
@@ -49,6 +52,7 @@
     {
       "name": "Ice Cube",
       "comment": "Shut up Kevin, why you soft as hell"
-    }]
+    }],
+    "start": "2016-01-21"
   }      
 ]
