@@ -24,7 +24,7 @@ MongoClient.connect(mongoUrl, function(err, database) {
   console.log("Connected correctly to server");
   db = database;
 
-  // Search the events & calendars collections and return all results. If the collections are empty, seed with events.json
+  // Search tdb.he events & calendars collections and return all results. If the collections are empty, seed with events.json
   db.collection('events').find({}).toArray(function(err,result){
     if (result.length===0){
       db.collection('events').insert(events)

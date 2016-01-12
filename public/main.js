@@ -26,3 +26,13 @@ $(document).ready(function(){
   $(window).on('load',loadData)
 
 })
+
+$eventOne = $('div.fc-content');
+$modal = $('.modal');
+
+
+var toggleModal = function(){
+	$modal.toggle();
+}
+
+$eventOne.on('click', toggleModal);
